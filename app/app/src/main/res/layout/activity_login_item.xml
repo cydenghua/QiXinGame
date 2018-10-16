@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_r_large"
+    android:padding="@dimen/space_sides">
+
+    <LinearLayout
+        style="@style/itemInfo"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/itemInfoLeftGreyText"
+            android:text="名         称："/>
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/itemInfoRightEditText"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemInfo"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/itemInfoLeftGreyText"
+            android:text="服务地址："/>
+        <TextView
+            android:id="@+id/tv_url"
+            style="@style/itemInfoRightEditText"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_set"
+            android:layout_weight="1"
+            style="@style/btnBlueSmall"
+            android:text="设置"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_weight="1"
+            style="@style/btnBlueSmall"
+            android:text="登录"/>
+
+    </LinearLayout>
+
+</LinearLayout>

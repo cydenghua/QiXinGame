@@ -1,0 +1,183 @@
+七星彩玩法说明：
+二字现中奖：
+
+12；13；14；23；24；34
+
+三字现中奖：
+
+123；124；134；234
+
+四字现中奖：四字定中奖：
+
+1234
+
+二字定中奖：
+
+12xx； 1x3x； 1xx4； x23x； x2x4； xx34
+
+三字定中奖：
+
+123x； 12x4； 1x34； x234
+
+二字现中奖：
+
+12；13；14；23；24；34
+
+三字现中奖：
+
+123；124；134；234
+
+四字现中奖：1234 现；
+投注方法：
+
+3)快打,直接在输入框输入号码,及金额。 点击下注就可
+
+4)快选,自动快选号. 如千位 百位 十位 个位 输入想要的号码。
+可以在二字定，三字定，四字定，二字现，三字现，四字现中——
+《1》除取 位置的合分：如12位置在"取"打勾输入123456，那么千位和百位的数字就取合数为123456.
+《2》全倒 上奖 排除功能
+《3》另外可以“除”“取”：双重 双双重 三重 四重 二兄弟 三兄弟 四兄弟 对数 单 双
+
+5)后台要求:
+
+股东、总代理、代理、会员 这四个级别,
+
+可以在线下载数据.
+
+6)每期开奖号码由股东统一输入.有些码的赔率变动股东可以调解如：2定23XX 可以调成赔率80 3定234X 可以调低下来！这只是个比如，功能要可以调2定 3定 4定的一些码的赔率低！
+
+7）代理可以开会员，管理会员金额的加减。调解总代理给的赔率变动。如：2定可以设置97也可以设置93.调下来水钱就越多。
+
+8)每期会员打奖多少水钱和中奖的盈亏金额在股东输入开奖号码后自动结算出来！
+
+
+
+appname: 万金七星
+APP公共模块：
+    用户登录；加密；
+
+两个app合并为一个， 根据账号区分权限
+
+一、管理APP
+    1.账号管理，可以设置下级账号；角色有不同级别账号； 最后一个级别的角色没有增加账号的权限；
+
+
+二、会员APP
+
+会员：
+1a.1380000138.com
+账号：x138，密码：fskj1234
+
+网站：1eee.16900888.com
+帐号：fc678
+密码：qa123456
+
+代理：
+1b.1380000138.com
+tt668  密码ab123456
+
+线上投注协议
+
+致会员
+1.当您在下注之后，请等待下注后的成功状态信息。
+2.为了避免出现争议，您必须在下注之后检查 “ 下注状况”。
+3.任何的投诉必须在开奖之前提出，本公司不会受理任何开奖之后的投诉。
+4.所有投注项目，公布赔率时出现的任何打字错误或非故意人为失误，本公司保留改正错误和按正确赔率结算投注的权力。
+5.开奖后的投注，将被视为“ 无效 ”。所有赔率将不定时浮动，派彩时的赔率将以确认投注时之赔率为准。
+6.敬告有意与本公司博彩之客户，应注意您所在的国家或居住地可能规定网络博彩不合法，若此情况属实，本公司将不接受任何客户因违反当地博彩或赌博法令所引起之任何责任。
+7.倘若发生遭黑客入侵破坏行为或不可抗拒之灾害导致系统故障或资料损坏，资料丢失等情况，我们将以本公司线上交易之后备资料为最后处理依据；为确保各方真实利益，请各会员交易后打印资料，本公司才接受投诉及处理。
+8.为避免纠纷，各会员在交易之后，务必进入下注明细检查，若发生任何异常，请立即与代理商联系查证，否则交易会员必须同意，一切交易历史将以本公司资料库中资料为准，不得异议。
+9.如本公司机房遇天灾，停电或不可抗力之因素,导致无法运作时,得中止所有未开奖前之投注,在本公司中止下注前,会员所有投注仍属有效,不得要求取消或延迟交收,以及不得有任何异议。
+10.如发生临时性、突发性等特殊情况,本公司有权作出相对应之决定,不得异议。
+11.本公司所有投注皆含本金,请认真了解规则说明。
+了解以及同意以上列名的协议
+
+系统提示
+
+如果出现打不开网站的用户，请这样设置，删除自己电脑上的（360安全卫士或金山卫士或百度卫士），只保留（360杀毒或金山毒霸或百度杀毒），用电脑自带（IE）浏览器，就可以打开网站了。（如果自己不懂删除和安装，请电脑店工作人员帮忙，一次性把问题解决了，方便以后工作）请配合，谢谢！下载地址
+建议：请各用户至少配备（电信，移动，联通）其中两种上网方式，避免无法打开网站，影响工作，谢谢合作。
+
+特别提醒：本公司如果输入开奖结果错误，有权利更正开奖结果，最终以官方最后公布结果来结账，不得异议。
+特别提醒：为了避免出现争议，请各会员到第二天早上才开始兑奖。不要当天晚上知道结果后，马上就兑奖给客人，出现当天晚上兑奖造成的损失，会员自负，不得异议。
+
+请收藏：通知网永久网址xp.2020209.com，点击登录，临时变更网址线路将在通知网里实现。
+
+请各级别一个月更换一次复杂密码（字母大小写+数字+字符）混合为佳，避免万一密码泄露造成的损失。
+ 通知码:2sw27a
+
+todo list：
+能够删除历史数据
+下注明细需要增加字段 单号， 打印标记， 打印时间；
+日志。。。
+
+
+
+激活码20186252---提取链接： https://pan.baidu.com/s/15jOV3ZB7-f_huOEM3xHt_Q 密码：ychh
+已读
+官网下载好软件以后，启动时会弹出激活框，然后选择在Activation code 或者 license keys，然后全部复制提取后的激活码粘贴到激活框。
+EQUE2974SD-eyJsaWNlbnNlSWQiOiJFUVVFMjk3NFNEIiwibGljZW5zZWVOYW1lIjoi5b285bK4IDIiLCJhc3NpZ25lZU5hbWUiOiIiLCJhc3NpZ25lZUVtYWlsIjoiIiwibGljZW5zZVJlc3RyaWN0aW9uIjoiRm9yIGVkdWNhdGlvbmFsIHVzZSBvbmx5IiwiY2hlY2tDb25jdXJyZW50VXNlIjpmYWxzZSwicHJvZHVjdHMiOlt7ImNvZGUiOiJJSSIsInBhaWRVcFRvIjoiMjAxOS0wNi0yNCJ9LHsiY29kZSI6IlJTMCIsInBhaWRVcFRvIjoiMjAxOS0wNi0yNCJ9LHsiY29kZSI6IldTIiwicGFpZFVwVG8iOiIyMDE5LTA2LTI0In0seyJjb2RlIjoiUkQiLCJwYWlkVXBUbyI6IjIwMTktMDYtMjQifSx7ImNvZGUiOiJSQyIsInBhaWRVcFRvIjoiMjAxOS0wNi0yNCJ9LHsiY29kZSI6IkRDIiwicGFpZFVwVG8iOiIyMDE5LTA2LTI0In0seyJjb2RlIjoiREIiLCJwYWlkVXBUbyI6IjIwMTktMDYtMjQifSx7ImNvZGUiOiJSTSIsInBhaWRVcFRvIjoiMjAxOS0wNi0yNCJ9LHsiY29kZSI6IkRNIiwicGFpZFVwVG8iOiIyMDE5LTA2LTI0In0seyJjb2RlIjoiQUMiLCJwYWlkVXBUbyI6IjIwMTktMDYtMjQifSx7ImNvZGUiOiJEUE4iLCJwYWlkVXBUbyI6IjIwMTktMDYtMjQifSx7ImNvZGUiOiJHTyIsInBhaWRVcFRvIjoiMjAxOS0wNi0yNCJ9LHsiY29kZSI6IlBTIiwicGFpZFVwVG8iOiIyMDE5LTA2LTI0In0seyJjb2RlIjoiQ0wiLCJwYWlkVXBUbyI6IjIwMTktMDYtMjQifSx7ImNvZGUiOiJQQyIsInBhaWRVcFRvIjoiMjAxOS0wNi0yNCJ9LHsiY29kZSI6IlJTVSIsInBhaWRVcFRvIjoiMjAxOS0wNi0yNCJ9XSwiaGFzaCI6Ijk0MDY5MTIvMCIsImdyYWNlUGVyaW9kRGF5cyI6MCwiYXV0b1Byb2xvbmdhdGVkIjpmYWxzZSwiaXNBdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlfQ==-bU49BNslTZkPfsYpxhEN/PvSKCyy+yvpMymfipiyGx8pL9Q20GQwgDNRgGfOn/1jU1A0bsMraQFpX05VlCqW1YoZr6/ch+4OPRV3NkeQ4v37d/9f48ZDKTuWntOgQu4Vtp6fiUt3ZaglWp79iGhfMDRmCQ0BB22OnnLf3GiLQf9PXbbKiEtTwE9fjmym1SwVIq2IUtgh/b9e/CuletVCr3C534F5Z8hLYO7f8P7RSoJCkZiaWP0UfyN8B80xBxzr5ygDcOP0E2VbJdU8yS/en4HfFb2qdmUKdqGl2RsPDR2iPwtvL6eHE+rBVvepbXcG1MfAY8oqTpba9umZCjcTHg==-MIIEPjCCAiagAwIBAgIBBTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE1MTEwMjA4MjE0OFoXDTE4MTEwMTA4MjE0OFowETEPMA0GA1UEAwwGcHJvZDN5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQC9WZuYgQedSuOc5TOUSrRigMw4/+wuC5EtZBfvdl4HT/8vzMW/oUlIP4YCvA0XKyBaCJ2iX+ZCDKoPfiYXiaSiH+HxAPV6J79vvouxKrWg2XV6ShFtPLP+0gPdGq3x9R3+kJbmAm8w+FOdlWqAfJrLvpzMGNeDU14YGXiZ9bVzmIQbwrBA+c/F4tlK/DV07dsNExihqFoibnqDiVNTGombaU2dDup2gwKdL81ua8EIcGNExHe82kjF4zwfadHk3bQVvbfdAwxcDy4xBjs3L4raPLU3yenSzr/OEur1+jfOxnQSmEcMXKXgrAQ9U55gwjcOFKrgOxEdek/Sk1VfOjvS+nuM4eyEruFMfaZHzoQiuw4IqgGc45ohFH0UUyjYcuFxxDSU9lMCv8qdHKm+wnPRb0l9l5vXsCBDuhAGYD6ss+Ga+aDY6f/qXZuUCEUOH3QUNbbCUlviSz6+GiRnt1kA9N2Qachl+2yBfaqUqr8h7Z2gsx5LcIf5kYNsqJ0GavXTVyWh7PYiKX4bs354ZQLUwwa/cG++2+wNWP+HtBhVxMRNTdVhSm38AknZlD+PTAsWGu9GyLmhti2EnVwGybSD2Dxmhxk3IPCkhKAK+pl0eWYGZWG3tJ9mZ7SowcXLWDFAk0lRJnKGFMTggrWjV8GYpw5bq23VmIqqDLgkNzuoog==
+
+
+
+
+
+停压功能，股东设置停压， 会员可查看停压号码
+bug:设置下线后，剩余信用额度反而增加了
+
+
+
+第一步 创建以下两个 日志表
+
+复制代码
+  CREATE TABLE `slow_log` (
+   `start_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+                          ON UPDATE CURRENT_TIMESTAMP,
+   `user_host` mediumtext NOT NULL,
+   `query_time` time NOT NULL,
+   `lock_time` time NOT NULL,
+   `rows_sent` int(11) NOT NULL,
+   `rows_examined` int(11) NOT NULL,
+   `db` varchar(512) NOT NULL,
+   `last_insert_id` int(11) NOT NULL,
+   `insert_id` int(11) NOT NULL,
+   `server_id` int(10) unsigned NOT NULL,
+   `sql_text` mediumtext NOT NULL,
+   `thread_id` bigint(21) unsigned NOT NULL
+  ) ENGINE=CSV DEFAULT CHARSET=utf8 COMMENT='Slow log'
+复制代码
+复制代码
+  CREATE TABLE `general_log` (
+   `event_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+                          ON UPDATE CURRENT_TIMESTAMP,
+   `user_host` mediumtext NOT NULL,
+   `thread_id` bigint(21) unsigned NOT NULL,
+   `server_id` int(10) unsigned NOT NULL,
+   `command_type` varchar(64) NOT NULL,
+   `argument` mediumtext NOT NULL
+  ) ENGINE=CSV DEFAULT CHARSET=utf8 COMMENT='General log'
+复制代码
+第二步 在数据库上开启 查询日志
+
+SET global general_log = 1;
+SET global log_output = 'table';
+第三步 查询日志
+
+select * from mysql.general_log
+
+第四步 在数据库上关闭 查询日志
+
+SET global general_log = 0;
+
+
+第五步 清除数据库 日志
+
+truncate table mysql.general_log;
+
+
+
+web 需求：
+1.登录功能；
+2.快打， 快选；
+3.赔率变动；
+
+

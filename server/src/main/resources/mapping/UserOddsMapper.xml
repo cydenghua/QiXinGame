@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dcode.qixin.mapper.UserOddsMapper" >
+  <resultMap id="BaseResultMap" type="com.dcode.qixin.model.UserOdds" >
+    <id column="user_id" property="userId" jdbcType="INTEGER" />
+    <id column="play_type" property="playType" jdbcType="VARCHAR" />
+    <result column="play_type_name" property="playTypeName" jdbcType="VARCHAR" />
+    <result column="play_type_class" property="playTypeClass" jdbcType="VARCHAR" />
+    <result column="min_play" property="minPlay" jdbcType="INTEGER" />
+    <result column="max_play" property="maxPlay" jdbcType="INTEGER" />
+    <result column="max_class_play" property="maxClassPlay" jdbcType="INTEGER" />
+    <result column="user_id_pt" property="userIdPt" jdbcType="INTEGER" />
+    <result column="user_id_gd" property="userIdGd" jdbcType="INTEGER" />
+    <result column="user_id_zd" property="userIdZd" jdbcType="INTEGER" />
+    <result column="user_id_dl" property="userIdDl" jdbcType="INTEGER" />
+    <result column="user_id_hy" property="userIdHy" jdbcType="INTEGER" />
+    <result column="odds_pt" property="oddsPt" jdbcType="DECIMAL" />
+    <result column="odds_gd" property="oddsGd" jdbcType="DECIMAL" />
+    <result column="odds_zd" property="oddsZd" jdbcType="DECIMAL" />
+    <result column="odds_dl" property="oddsDl" jdbcType="DECIMAL" />
+    <result column="odds_hy" property="oddsHy" jdbcType="DECIMAL" />
+    <result column="odds_kf" property="oddsKf" jdbcType="DECIMAL" />
+    <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+    <result column="o_id" property="oId" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, 
+    user_id_pt, user_id_gd, user_id_zd, user_id_dl, user_id_hy, odds_pt, odds_gd, odds_zd, 
+    odds_dl, odds_hy, odds_kf, created_time, modify_time, o_id
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.dcode.qixin.model.UserOddsKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from qx_user_odds
+    where user_id = #{userId,jdbcType=INTEGER}
+      and play_type = #{playType,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.dcode.qixin.model.UserOddsKey" >
+    delete from qx_user_odds
+    where user_id = #{userId,jdbcType=INTEGER}
+      and play_type = #{playType,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.dcode.qixin.model.UserOdds" >
+    insert into qx_user_odds (user_id, play_type, play_type_name, 
+      play_type_class, min_play, max_play, 
+      max_class_play, user_id_pt, user_id_gd, 
+      user_id_zd, user_id_dl, user_id_hy, 
+      odds_pt, odds_gd, odds_zd, 
+      odds_dl, odds_hy, odds_kf, 
+      created_time, modify_time, o_id
+      )
+    values (#{userId,jdbcType=INTEGER}, #{playType,jdbcType=VARCHAR}, #{playTypeName,jdbcType=VARCHAR}, 
+      #{playTypeClass,jdbcType=VARCHAR}, #{minPlay,jdbcType=INTEGER}, #{maxPlay,jdbcType=INTEGER}, 
+      #{maxClassPlay,jdbcType=INTEGER}, #{userIdPt,jdbcType=INTEGER}, #{userIdGd,jdbcType=INTEGER}, 
+      #{userIdZd,jdbcType=INTEGER}, #{userIdDl,jdbcType=INTEGER}, #{userIdHy,jdbcType=INTEGER}, 
+      #{oddsPt,jdbcType=DECIMAL}, #{oddsGd,jdbcType=DECIMAL}, #{oddsZd,jdbcType=DECIMAL}, 
+      #{oddsDl,jdbcType=DECIMAL}, #{oddsHy,jdbcType=DECIMAL}, #{oddsKf,jdbcType=DECIMAL}, 
+      #{createdTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP}, #{oId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.dcode.qixin.model.UserOdds" >
+    insert into qx_user_odds
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="playType != null" >
+        play_type,
+      </if>
+      <if test="playTypeName != null" >
+        play_type_name,
+      </if>
+      <if test="playTypeClass != null" >
+        play_type_class,
+      </if>
+      <if test="minPlay != null" >
+        min_play,
+      </if>
+      <if test="maxPlay != null" >
+        max_play,
+      </if>
+      <if test="maxClassPlay != null" >
+        max_class_play,
+      </if>
+      <if test="userIdPt != null" >
+        user_id_pt,
+      </if>
+      <if test="userIdGd != null" >
+        user_id_gd,
+      </if>
+      <if test="userIdZd != null" >
+        user_id_zd,
+      </if>
+      <if test="userIdDl != null" >
+        user_id_dl,
+      </if>
+      <if test="userIdHy != null" >
+        user_id_hy,
+      </if>
+      <if test="oddsPt != null" >
+        odds_pt,
+      </if>
+      <if test="oddsGd != null" >
+        odds_gd,
+      </if>
+      <if test="oddsZd != null" >
+        odds_zd,
+      </if>
+      <if test="oddsDl != null" >
+        odds_dl,
+      </if>
+      <if test="oddsHy != null" >
+        odds_hy,
+      </if>
+      <if test="oddsKf != null" >
+        odds_kf,
+      </if>
+      <if test="createdTime != null" >
+        created_time,
+      </if>
+      <if test="modifyTime != null" >
+        modify_time,
+      </if>
+      <if test="oId != null" >
+        o_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="playType != null" >
+        #{playType,jdbcType=VARCHAR},
+      </if>
+      <if test="playTypeName != null" >
+        #{playTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="playTypeClass != null" >
+        #{playTypeClass,jdbcType=VARCHAR},
+      </if>
+      <if test="minPlay != null" >
+        #{minPlay,jdbcType=INTEGER},
+      </if>
+      <if test="maxPlay != null" >
+        #{maxPlay,jdbcType=INTEGER},
+      </if>
+      <if test="maxClassPlay != null" >
+        #{maxClassPlay,jdbcType=INTEGER},
+      </if>
+      <if test="userIdPt != null" >
+        #{userIdPt,jdbcType=INTEGER},
+      </if>
+      <if test="userIdGd != null" >
+        #{userIdGd,jdbcType=INTEGER},
+      </if>
+      <if test="userIdZd != null" >
+        #{userIdZd,jdbcType=INTEGER},
+      </if>
+      <if test="userIdDl != null" >
+        #{userIdDl,jdbcType=INTEGER},
+      </if>
+      <if test="userIdHy != null" >
+        #{userIdHy,jdbcType=INTEGER},
+      </if>
+      <if test="oddsPt != null" >
+        #{oddsPt,jdbcType=DECIMAL},
+      </if>
+      <if test="oddsGd != null" >
+        #{oddsGd,jdbcType=DECIMAL},
+      </if>
+      <if test="oddsZd != null" >
+        #{oddsZd,jdbcType=DECIMAL},
+      </if>
+      <if test="oddsDl != null" >
+        #{oddsDl,jdbcType=DECIMAL},
+      </if>
+      <if test="oddsHy != null" >
+        #{oddsHy,jdbcType=DECIMAL},
+      </if>
+      <if test="oddsKf != null" >
+        #{oddsKf,jdbcType=DECIMAL},
+      </if>
+      <if test="createdTime != null" >
+        #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null" >
+        #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="oId != null" >
+        #{oId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dcode.qixin.model.UserOdds" >
+    update qx_user_odds
+    <set >
+      <if test="playTypeName != null" >
+        play_type_name = #{playTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="playTypeClass != null" >
+        play_type_class = #{playTypeClass,jdbcType=VARCHAR},
+      </if>
+      <if test="minPlay != null" >
+        min_play = #{minPlay,jdbcType=INTEGER},
+      </if>
+      <if test="maxPlay != null" >
+        max_play = #{maxPlay,jdbcType=INTEGER},
+      </if>
+      <if test="maxClassPlay != null" >
+        max_class_play = #{maxClassPlay,jdbcType=INTEGER},
+      </if>
+      <if test="userIdPt != null" >
+        user_id_pt = #{userIdPt,jdbcType=INTEGER},
+      </if>
+      <if test="userIdGd != null" >
+        user_id_gd = #{userIdGd,jdbcType=INTEGER},
+      </if>
+      <if test="userIdZd != null" >
+        user_id_zd = #{userIdZd,jdbcType=INTEGER},
+      </if>
+      <if test="userIdDl != null" >
+        user_id_dl = #{userIdDl,jdbcType=INTEGER},
+      </if>
+      <if test="userIdHy != null" >
+        user_id_hy = #{userIdHy,jdbcType=INTEGER},
+      </if>
+      <if test="oddsPt != null" >
+        odds_pt = #{oddsPt,jdbcType=DECIMAL},
+      </if>
+      <if test="oddsGd != null" >
+        odds_gd = #{oddsGd,jdbcType=DECIMAL},
+      </if>
+      <if test="oddsZd != null" >
+        odds_zd = #{oddsZd,jdbcType=DECIMAL},
+      </if>
+      <if test="oddsDl != null" >
+        odds_dl = #{oddsDl,jdbcType=DECIMAL},
+      </if>
+      <if test="oddsHy != null" >
+        odds_hy = #{oddsHy,jdbcType=DECIMAL},
+      </if>
+      <if test="oddsKf != null" >
+        odds_kf = #{oddsKf,jdbcType=DECIMAL},
+      </if>
+      <if test="createdTime != null" >
+        created_time = #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null" >
+        modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="oId != null" >
+        o_id = #{oId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=INTEGER}
+      and play_type = #{playType,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dcode.qixin.model.UserOdds" >
+    update qx_user_odds
+    set play_type_name = #{playTypeName,jdbcType=VARCHAR},
+      play_type_class = #{playTypeClass,jdbcType=VARCHAR},
+      min_play = #{minPlay,jdbcType=INTEGER},
+      max_play = #{maxPlay,jdbcType=INTEGER},
+      max_class_play = #{maxClassPlay,jdbcType=INTEGER},
+      user_id_pt = #{userIdPt,jdbcType=INTEGER},
+      user_id_gd = #{userIdGd,jdbcType=INTEGER},
+      user_id_zd = #{userIdZd,jdbcType=INTEGER},
+      user_id_dl = #{userIdDl,jdbcType=INTEGER},
+      user_id_hy = #{userIdHy,jdbcType=INTEGER},
+      odds_pt = #{oddsPt,jdbcType=DECIMAL},
+      odds_gd = #{oddsGd,jdbcType=DECIMAL},
+      odds_zd = #{oddsZd,jdbcType=DECIMAL},
+      odds_dl = #{oddsDl,jdbcType=DECIMAL},
+      odds_hy = #{oddsHy,jdbcType=DECIMAL},
+      odds_kf = #{oddsKf,jdbcType=DECIMAL},
+      created_time = #{createdTime,jdbcType=TIMESTAMP},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      o_id = #{oId,jdbcType=INTEGER}
+    where user_id = #{userId,jdbcType=INTEGER}
+      and play_type = #{playType,jdbcType=VARCHAR}
+  </update>
+
+  <select id="selectByUserId" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />
+    from qx_user_odds
+    where user_id = #{userId,jdbcType=INTEGER}
+    order by o_id asc
+  </select>
+
+  <update id="addGdOdds" parameterType="com.dcode.qixin.model.UserOdds" >
+    update qx_user_odds
+    set odds_gd = odds_gd + #{oddsAdd,jdbcType=DECIMAL},
+        odds_zd = odds_zd + #{oddsAdd,jdbcType=DECIMAL},
+        odds_dl = odds_dl + #{oddsAdd,jdbcType=DECIMAL},
+        odds_hy = odds_hy + #{oddsAdd,jdbcType=DECIMAL},
+        odds_kf = odds_kf + #{oddsAdd,jdbcType=DECIMAL}
+    where user_id_gd = #{userIdGd,jdbcType=INTEGER}
+      and play_type = #{playType,jdbcType=VARCHAR};
+  </update>
+
+  <update id="addZdOdds" parameterType="com.dcode.qixin.model.UserOdds" >
+    update qx_user_odds
+    set odds_zd = odds_zd + #{oddsAdd,jdbcType=DECIMAL},
+        odds_dl = odds_dl + #{oddsAdd,jdbcType=DECIMAL},
+        odds_hy = odds_hy + #{oddsAdd,jdbcType=DECIMAL},
+        odds_kf = odds_kf + #{oddsAdd,jdbcType=DECIMAL}
+    where user_id_zd = #{userIdZd,jdbcType=INTEGER}
+      and play_type = #{playType,jdbcType=VARCHAR};
+  </update>
+
+  <update id="addDlOdds" parameterType="com.dcode.qixin.model.UserOdds" >
+    update qx_user_odds
+    set odds_dl = odds_dl + #{oddsAdd,jdbcType=DECIMAL},
+        odds_hy = odds_hy + #{oddsAdd,jdbcType=DECIMAL},
+        odds_kf = odds_kf + #{oddsAdd,jdbcType=DECIMAL}
+    where user_id_dl = #{userIdDl,jdbcType=INTEGER}
+      and play_type = #{playType,jdbcType=VARCHAR};
+  </update>
+
+  <update id="addHyOdds" parameterType="com.dcode.qixin.model.UserOdds" >
+    update qx_user_odds
+    set odds_hy = odds_hy + #{oddsAdd,jdbcType=DECIMAL},
+        odds_kf = odds_kf + #{oddsAdd,jdbcType=DECIMAL}
+    where user_id_hy = #{userIdHy,jdbcType=INTEGER}
+      and play_type = #{playType,jdbcType=VARCHAR};
+  </update>
+
+  <update id="addKfOdds" parameterType="com.dcode.qixin.model.UserOdds" >
+    update qx_user_odds
+    set odds_kf = odds_kf + #{oddsAdd,jdbcType=DECIMAL}
+    where user_id_hy = #{userIdHy,jdbcType=INTEGER}
+      and play_type = #{playType,jdbcType=VARCHAR};
+  </update>
+
+</mapper>

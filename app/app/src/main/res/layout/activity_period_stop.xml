@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.period.PeriodStopActivity">
+
+    <include layout="@layout/bar_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_normal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            style="@style/btnGrey"
+            android:text="删除停押"/>
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            style="@style/btnOrange"
+            android:text="增加停押"/>
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

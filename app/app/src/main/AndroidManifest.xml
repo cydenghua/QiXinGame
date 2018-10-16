@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dcode.wanjin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".WanjinApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.login.LoginLocalActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.login.LoginAddActivity" />
+        <activity android:name=".activity.login.LoginActivity" />
+        <activity android:name=".activity.login.LoginLocalSetActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.user.MyUserActivity" />
+        <activity android:name=".activity.user.AddUserActivity" />
+        <activity
+            android:name=".activity.user.UserOddsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.user.UserOddsKfActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.period.PeriodActivity" />
+        <activity android:name=".activity.period.PeriodEditActivity" />
+        <activity android:name=".activity.period.PeriodOddsActivity" />
+        <activity android:name=".activity.period.PeriodOddsEditActivity" />
+        <activity android:name=".activity.bet.BetQuickChoseResActivity" />
+        <activity
+            android:name=".activity.report.UserBillActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.period.PeriodStopActivity"></activity>
+    </application>
+
+</manifest>

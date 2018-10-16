@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_sn"
+        style="@style/textBlack"
+        android:layout_width="40dp"
+        android:gravity="center"
+        android:text="2"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/textBlack"
+            android:text="2325"/>
+        <TextView
+            android:id="@+id/tv_xian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="现"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_odds"
+        style="@style/textBlack"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="23425"/>
+    <TextView
+        android:id="@+id/tv_money"
+        style="@style/textBlack"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="23425"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/textBlack"
+        android:layout_width="90dp"
+        android:gravity="center"
+        android:text="25日17:52:00"/>
+
+    <CheckBox
+        android:id="@+id/cb_back"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/space_normal"
+        android:text="退码"/>
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/space_normal"
+        android:textColor="@color/text_grey"
+        android:gravity="center"
+        android:text="已退"/>
+
+</LinearLayout>

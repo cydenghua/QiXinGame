@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dcode.qixin.mapper.PeriodStopMapper" >
+  <resultMap id="BaseResultMap" type="com.dcode.qixin.model.PeriodStop" >
+    <id column="period_id" property="periodId" jdbcType="INTEGER" />
+    <id column="p_value" property="pValue" jdbcType="VARCHAR" />
+    <id column="is_xian" property="isXian" jdbcType="SMALLINT" />
+    <result column="comment" property="comment" jdbcType="VARCHAR" />
+    <result column="deleted" property="deleted" jdbcType="SMALLINT" />
+    <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    period_id, p_value, is_xian, comment, deleted, created_time, modify_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.dcode.qixin.model.PeriodStopKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from qx_period_stop
+    where period_id = #{periodId,jdbcType=INTEGER}
+      and p_value = #{pValue,jdbcType=VARCHAR}
+      and is_xian = #{isXian,jdbcType=SMALLINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.dcode.qixin.model.PeriodStopKey" >
+    delete from qx_period_stop
+    where period_id = #{periodId,jdbcType=INTEGER}
+      and p_value = #{pValue,jdbcType=VARCHAR}
+      and is_xian = #{isXian,jdbcType=SMALLINT}
+  </delete>
+  <insert id="insert" parameterType="com.dcode.qixin.model.PeriodStop" >
+    insert into qx_period_stop (period_id, p_value, is_xian, 
+      comment, deleted, created_time, 
+      modify_time)
+    values (#{periodId,jdbcType=INTEGER}, #{pValue,jdbcType=VARCHAR}, #{isXian,jdbcType=SMALLINT}, 
+      #{comment,jdbcType=VARCHAR}, #{deleted,jdbcType=SMALLINT}, #{createdTime,jdbcType=TIMESTAMP}, 
+      #{modifyTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dcode.qixin.model.PeriodStop" >
+    insert into qx_period_stop
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="periodId != null" >
+        period_id,
+      </if>
+      <if test="pValue != null" >
+        p_value,
+      </if>
+      <if test="isXian != null" >
+        is_xian,
+      </if>
+      <if test="comment != null" >
+        comment,
+      </if>
+      <if test="deleted != null" >
+        deleted,
+      </if>
+      <if test="createdTime != null" >
+        created_time,
+      </if>
+      <if test="modifyTime != null" >
+        modify_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="periodId != null" >
+        #{periodId,jdbcType=INTEGER},
+      </if>
+      <if test="pValue != null" >
+        #{pValue,jdbcType=VARCHAR},
+      </if>
+      <if test="isXian != null" >
+        #{isXian,jdbcType=SMALLINT},
+      </if>
+      <if test="comment != null" >
+        #{comment,jdbcType=VARCHAR},
+      </if>
+      <if test="deleted != null" >
+        #{deleted,jdbcType=SMALLINT},
+      </if>
+      <if test="createdTime != null" >
+        #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null" >
+        #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dcode.qixin.model.PeriodStop" >
+    update qx_period_stop
+    <set >
+      <if test="comment != null" >
+        comment = #{comment,jdbcType=VARCHAR},
+      </if>
+      <if test="deleted != null" >
+        deleted = #{deleted,jdbcType=SMALLINT},
+      </if>
+      <if test="createdTime != null" >
+        created_time = #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null" >
+        modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where period_id = #{periodId,jdbcType=INTEGER}
+      and p_value = #{pValue,jdbcType=VARCHAR}
+      and is_xian = #{isXian,jdbcType=SMALLINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dcode.qixin.model.PeriodStop" >
+    update qx_period_stop
+    set comment = #{comment,jdbcType=VARCHAR},
+      deleted = #{deleted,jdbcType=SMALLINT},
+      created_time = #{createdTime,jdbcType=TIMESTAMP},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+    where period_id = #{periodId,jdbcType=INTEGER}
+      and p_value = #{pValue,jdbcType=VARCHAR}
+      and is_xian = #{isXian,jdbcType=SMALLINT}
+  </update>
+
+  <select id="selectByPeriod" resultMap="BaseResultMap" parameterType="com.dcode.qixin.model.PeriodStopKey" >
+    select
+    <include refid="Base_Column_List" />
+    from qx_period_stop
+    where deleted = 0 and period_id = #{periodId,jdbcType=INTEGER}
+    order by modify_time desc
+  </select>
+
+
+</mapper>

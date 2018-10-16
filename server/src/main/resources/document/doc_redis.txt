@@ -1,0 +1,39 @@
+
+https://www.cnblogs.com/autohome7390/p/6433956.html
+
+redis服务器的安装与启动可以参考之前的博客，地址如下：
+　　　　http://www.cnblogs.com/gdpuzxs/p/6623171.html
+
+
+linux下yum安装redis以及使用:
+https://www.cnblogs.com/qianxiaoruofeng/p/8046570.html
+
+redis:
+https://www.cnblogs.com/gdpuzxs/p/7222309.html
+
+redis安装完毕后，我们来查看下redis安装时创建的相关文件，如下：
+rpm -qa |grep redis
+rpm -ql redis
+
+
+redis 使用：
+https://www.cnblogs.com/gdpuzxs/p/7222309.html
+
+
+进入redis：redis-cli
+清除所有缓存：FLUSHALL
+
+
+redis3.0配置文件详解
+https://www.cnblogs.com/zhang-ke/p/5981108.html
+#内存容量超过maxmemory后的处理策略。
+#volatile-lru：利用LRU算法移除设置过过期时间的key。
+#volatile-random：随机移除设置过过期时间的key。
+#volatile-ttl：移除即将过期的key，根据最近过期时间来删除（辅以TTL）
+#allkeys-lru：利用LRU算法移除任何key。
+#allkeys-random：随机移除任何key。
+#noeviction：不移除任何key，只是返回一个写错误。
+#上面的这些驱逐策略，如果redis没有合适的key驱逐，对于写命令，还是会返回错误。redis将不再接收写请求，只接收get请求。写命令包括：set setnx setex append incr decr rpush lpush rpushx lpushx linsert lset rpoplpush sadd sinter sinterstore sunion sunionstore sdiff sdiffstore zadd zincrby zunionstore zinterstore hset hsetnx hmset hincrby incrby decrby getset mset msetnx exec sort。
+# maxmemory-policy noeviction
+
+

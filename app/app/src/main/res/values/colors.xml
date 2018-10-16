@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cc00ff</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorAccent">@color/colorPrimary</color>
+
+    <color name="white_grey">#f6f8fa</color><!-- 所有界面默认背景色 -->
+    <color name="orangeLight">#ffffaa</color>
+    <color name="orange">#f69546</color><!--账户余额、价格数字、财务相关文字、文字突出对比等-->
+    <color name="line_divide">#ebebeb</color><!--模块之间的分隔线默认颜色,0.5dp-->
+    <color name="line_shape_stroke">#c3c6c8</color><!--模块之间的分隔线默认颜色,0.5dp-->
+
+    <color name="stroke_grey">@color/text_grey</color><!--shape边框颜色-->
+
+    <color name="red">#f64646</color><!--必填标志符号、退出登录、错误失败提示文字、警告性文字、重点突出文字等-->
+    <color name="red_bg">#ff7676</color><!--红色背景-->
+
+</resources>

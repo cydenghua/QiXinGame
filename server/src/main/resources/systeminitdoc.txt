@@ -1,0 +1,6 @@
+
+
+mysql init:
+https://www.cnblogs.com/brianzhu/p/8575243.html
+mysql pw is：root  Denghua+123   119.28.232.88
+

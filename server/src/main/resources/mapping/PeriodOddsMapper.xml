@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dcode.qixin.mapper.PeriodOddsMapper" >
+  <resultMap id="BaseResultMap" type="com.dcode.qixin.model.PeriodOdds" >
+    <id column="period_id" property="periodId" jdbcType="INTEGER" />
+    <id column="play_class" property="playClass" jdbcType="VARCHAR" />
+    <id column="p_value" property="pValue" jdbcType="VARCHAR" />
+    <result column="odds_new" property="oddsNew" jdbcType="DECIMAL" />
+    <result column="happen_sum" property="happenSum" jdbcType="INTEGER" />
+    <result column="comment" property="comment" jdbcType="VARCHAR" />
+    <result column="o_id" property="oId" jdbcType="INTEGER" />
+    <result column="eneabled" property="eneabled" jdbcType="SMALLINT" />
+    <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    period_id, play_class, p_value, odds_new, happen_sum, comment, o_id, eneabled, created_time,
+    modify_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.dcode.qixin.model.PeriodOddsKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from qx_period_odds
+    where period_id = #{periodId,jdbcType=INTEGER}
+      and play_class = #{playClass,jdbcType=VARCHAR}
+      and p_value = #{pValue,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.dcode.qixin.model.PeriodOddsKey" >
+    delete from qx_period_odds
+    where period_id = #{periodId,jdbcType=INTEGER}
+      and play_class = #{playClass,jdbcType=VARCHAR}
+      and p_value = #{pValue,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.dcode.qixin.model.PeriodOdds" >
+    insert into qx_period_odds (period_id, play_class, p_value,
+      odds_new, happen_sum, comment, 
+      o_id, eneabled, created_time, 
+      modify_time)
+    values (#{periodId,jdbcType=INTEGER}, #{playClass,jdbcType=VARCHAR}, #{pValue,jdbcType=VARCHAR},
+      #{oddsNew,jdbcType=DECIMAL}, #{happenSum,jdbcType=INTEGER}, #{comment,jdbcType=VARCHAR}, 
+      #{oId,jdbcType=INTEGER}, #{eneabled,jdbcType=SMALLINT}, #{createdTime,jdbcType=TIMESTAMP}, 
+      #{modifyTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dcode.qixin.model.PeriodOdds" >
+    insert into qx_period_odds
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="periodId != null" >
+        period_id,
+      </if>
+      <if test="playClass != null" >
+        play_class,
+      </if>
+      <if test="pValue != null" >
+        p_value,
+      </if>
+      <if test="oddsNew != null" >
+        odds_new,
+      </if>
+      <if test="happenSum != null" >
+        happen_sum,
+      </if>
+      <if test="comment != null" >
+        comment,
+      </if>
+      <if test="oId != null" >
+        o_id,
+      </if>
+      <if test="eneabled != null" >
+        eneabled,
+      </if>
+      <if test="createdTime != null" >
+        created_time,
+      </if>
+      <if test="modifyTime != null" >
+        modify_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="periodId != null" >
+        #{periodId,jdbcType=INTEGER},
+      </if>
+      <if test="playClass != null" >
+        #{playClass,jdbcType=VARCHAR},
+      </if>
+      <if test="pValue != null" >
+        #{pValue,jdbcType=VARCHAR},
+      </if>
+      <if test="oddsNew != null" >
+        #{oddsNew,jdbcType=DECIMAL},
+      </if>
+      <if test="happenSum != null" >
+        #{happenSum,jdbcType=INTEGER},
+      </if>
+      <if test="comment != null" >
+        #{comment,jdbcType=VARCHAR},
+      </if>
+      <if test="oId != null" >
+        #{oId,jdbcType=INTEGER},
+      </if>
+      <if test="eneabled != null" >
+        #{eneabled,jdbcType=SMALLINT},
+      </if>
+      <if test="createdTime != null" >
+        #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null" >
+        #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dcode.qixin.model.PeriodOdds" >
+    update qx_period_odds
+    <set >
+      <if test="oddsNew != null" >
+        odds_new = #{oddsNew,jdbcType=DECIMAL},
+      </if>
+      <if test="happenSum != null" >
+        happen_sum = #{happenSum,jdbcType=INTEGER},
+      </if>
+      <if test="comment != null" >
+        comment = #{comment,jdbcType=VARCHAR},
+      </if>
+      <if test="oId != null" >
+        o_id = #{oId,jdbcType=INTEGER},
+      </if>
+      <if test="eneabled != null" >
+        eneabled = #{eneabled,jdbcType=SMALLINT},
+      </if>
+      <if test="createdTime != null" >
+        created_time = #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null" >
+        modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where period_id = #{periodId,jdbcType=INTEGER}
+      and play_class = #{playClass,jdbcType=VARCHAR}
+      and p_value = #{pValue,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dcode.qixin.model.PeriodOdds" >
+    update qx_period_odds
+    set odds_new = #{oddsNew,jdbcType=DECIMAL},
+      happen_sum = #{happenSum,jdbcType=INTEGER},
+      comment = #{comment,jdbcType=VARCHAR},
+      o_id = #{oId,jdbcType=INTEGER},
+      eneabled = #{eneabled,jdbcType=SMALLINT},
+      created_time = #{createdTime,jdbcType=TIMESTAMP},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+    where period_id = #{periodId,jdbcType=INTEGER}
+      and play_class = #{playClass,jdbcType=VARCHAR}
+      and p_value = #{pValue,jdbcType=VARCHAR}
+  </update>
+
+  <select id="selectByPeriod" parameterType="java.lang.Integer"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from qx_period_odds
+    where period_id = #{periodId,jdbcType=INTEGER}
+    order by created_time desc
+  </select>
+
+</mapper>

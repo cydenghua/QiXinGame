@@ -1,0 +1,298 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textLarge" parent="wrap_content">
+        <item name="android:textSize">@dimen/text_size_large</item><!--18sp-->
+    </style>
+
+    <style name="textNormal" parent="wrap_content">
+        <item name="android:textSize">@dimen/text_size_normal</item><!--16sp-->
+    </style>
+
+    <style name="text" parent="wrap_content">
+        <item name="android:textSize">@dimen/text_size</item><!--14sp-->
+    </style>
+
+    <style name="textSmall" parent="wrap_content">
+        <item name="android:textSize">@dimen/text_size_small</item><!--12sp-->
+    </style>
+
+    <style name="textSmaller" parent="wrap_content">
+        <item name="android:textSize">@dimen/text_size_smaller</item><!--12sp-->
+    </style>
+
+    <!--text style start-->
+    <!--Orange 文字颜色************************************************************-->
+    <style name="textOrange" parent="text">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <!--text style start-->
+    <!--Black 所有文字默认颜色************************************************************-->
+    <style name="textBlackLarge" parent="textLarge">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="textBlackNormal" parent="textNormal">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="textBlack" parent="text">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="textBlackSmall" parent="textSmall">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="textBlackSmaller" parent="textSmaller">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="textBlackNormal.bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textBlackGrid" parent="textBlack">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+
+    <style name="textGridItem" parent="textBlack">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_margin">0.5dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+
+    <!--Grey 灰色文字默认颜色*************************************************************-->
+    <style name="textGreyLarge" parent="textLarge">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="textGreyNormal" parent="textNormal">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="textGrey" parent="text">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="textGreySmall" parent="textSmall">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="textGreySmaller" parent="textSmaller">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <!--白色****************************************************************************-->
+    <style name="textWhiteLarge" parent="textLarge">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textWhiteNormal" parent="textNormal">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textWhite" parent="text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textWhiteSmall" parent="textSmall">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textWhiteSmaller" parent="textSmaller">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--蓝色主色调**********************************************************************-->
+    <style name="textBlueLarge" parent="textLarge">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="textBlueNormal" parent="textNormal">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="textBlue" parent="text">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="textBlueSmall" parent="textSmall">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="textBlueSmaller" parent="textSmaller">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <!--text style end-->
+
+    <!--每项item，例如个人资料姓名项********************************************************-->
+    <style name="itemInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_info_height</item>
+        <item name="android:paddingLeft">@dimen/space_sides</item>
+        <item name="android:paddingRight">@dimen/space_sides</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="itemInfoLeftText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="itemInfoLeftGreyText" parent="itemInfoLeftText">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="itemInfoRightText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <!--<item name="android:drawableRight">@drawable/ic_arrow_right_grey</item>-->
+        <item name="android:drawablePadding">@dimen/drawable_padding</item>
+    </style>
+
+    <style name="itemInfoRightEditText" parent="itemInfoRightText">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <!--每项item-->
+
+
+    <!--分隔线****************************************************************************-->
+    <!--分隔线宽度全屏-->
+    <style name="lineDivide">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_divide_height</item>
+        <item name="android:background">@color/line_divide</item>
+    </style>
+
+    <style name="lineDivideBlue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+
+
+    <!--按钮******************************************************************************-->
+    <!--蓝色圈全圆角宽度全屏,高度默认-->
+    <style name="btnStyle">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:layout_marginLeft">@dimen/btn_margin_sizes</item>
+        <item name="android:layout_marginRight">@dimen/btn_margin_sizes</item>
+        <item name="android:background">@drawable/shape_blue_r_large</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btnBlue" parent="btnStyle">
+        <item name="android:background">@drawable/shape_blue_r_large</item>
+    </style>
+
+    <style name="btnBlueSmall" parent="btnStyle">
+        <item name="android:layout_height">@dimen/btn_height_small</item>
+        <item name="android:background">@drawable/shape_blue_r_large</item>
+    </style>
+
+    <style name="btnBlueChose" parent="btnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_margin">@dimen/space_small</item>
+        <item name="android:background">@drawable/shape_grey_r</item>
+    </style>
+
+    <style name="btnGrey" parent="btnStyle">
+        <item name="android:background">@drawable/shape_grey_r_large</item>
+    </style>
+
+    <!--蓝色圈全圆角宽度全屏,高度默认-->
+    <style name="btnRed" parent="btnStyle">
+        <item name="android:background">@drawable/shape_red_r_large</item>
+    </style>
+
+    <!--橙色圈全圆角宽度全屏,高度默认-->
+    <style name="btnOrange" parent="btnRed">
+        <item name="android:background">@drawable/shape_orange_r_large</item>
+    </style>
+
+    <!--橙色圈全圆角宽度全屏,高度默认-->
+    <style name="btnOrange2" parent="btnRed">
+        <item name="android:background">@drawable/shape_orange_r_large</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--橙色圈全圆角宽度全屏,高度默认-->
+    <style name="bgNumBlue" parent="textWhiteNormal">
+        <item name="android:background">@drawable/bg_circle_1</item>
+        <item name="android:layout_marginLeft">@dimen/space_small</item>
+        <item name="android:paddingLeft">@dimen/space_normal</item>
+        <item name="android:paddingRight">@dimen/space_normal</item>
+        <item name="android:paddingBottom">@dimen/space_small</item>
+        <item name="android:paddingTop">@dimen/space_small</item>
+    </style>
+    <!--橙色圈全圆角宽度全屏,高度默认-->
+    <style name="bgNumOrange" parent="bgNumBlue">
+        <item name="android:background">@drawable/bg_circle_3</item>
+    </style>
+
+
+
+
+
+    <!--输入框******************************************************************************-->
+    <style name="editStyle">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_marginTop">@dimen/space_small</item>
+        <item name="android:layout_marginBottom">@dimen/space_small</item>
+        <item name="android:background">@drawable/bg_edit</item>
+    </style>
+
+    <style name="editNumberStyle" parent="editStyle">
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">10</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

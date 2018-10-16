@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.bet.PeriodCountFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_period"
+            android:layout_width="100dp"
+            android:text="期号"
+            android:gravity="center"
+            style="@style/textBlackGrid"/>
+
+        <TextView
+            android:id="@+id/tv_user_hy"
+            android:layout_width="90dp"
+            android:text="会员"
+            style="@style/textBlackGrid"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_playmoney"
+            android:layout_width="70dp"
+            android:text="金额"
+            style="@style/textBlackGrid"/>
+
+        <TextView
+            android:id="@+id/tv_paykf"
+            android:layout_width="70dp"
+            android:text="中奖"
+            style="@style/textBlackGrid"/>
+
+        <TextView
+            android:id="@+id/tv_rake_hy"
+            android:layout_width="70dp"
+            android:text="回水(会员)"
+            style="@style/textBlackGrid"/>
+
+        <TextView
+            android:id="@+id/tv_rake_dl"
+            android:layout_width="70dp"
+            android:text="回水(代理)"
+            style="@style/textBlackGrid"/>
+
+        <TextView
+            android:id="@+id/tv_rake_zd"
+            android:layout_width="70dp"
+            android:text="回水(总代)"
+            style="@style/textBlackGrid"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

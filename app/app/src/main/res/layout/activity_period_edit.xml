@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.period.PeriodEditActivity">
+
+    <include layout="@layout/bar_title" />
+
+    <LinearLayout
+        style="@style/itemInfo"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/itemInfoLeftText"
+            android:text="开奖期号："/>
+        <EditText
+            android:id="@+id/et_period_id"
+            style="@style/itemInfoRightEditText"
+            android:inputType="number"
+            android:maxLength="5"
+            android:hint="期号"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/itemInfo"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/itemInfoLeftText"
+            android:text="开奖时间："/>
+        <EditText
+            android:id="@+id/et_period_time"
+            style="@style/itemInfoRightEditText"
+            android:hint="时间"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemInfo"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/itemInfoLeftText"
+            android:text="开奖号码1："/>
+        <EditText
+            android:id="@+id/et_p1"
+            style="@style/itemInfoRightEditText"
+            android:inputType="number"
+            android:maxLength="1"
+            android:hint="号码1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemInfo"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/itemInfoLeftText"
+            android:text="开奖号码2："/>
+        <EditText
+            android:id="@+id/et_p2"
+            style="@style/itemInfoRightEditText"
+            android:inputType="number"
+            android:maxLength="1"
+            android:hint="号码2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemInfo"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/itemInfoLeftText"
+            android:text="开奖号码3："/>
+        <EditText
+            android:id="@+id/et_p3"
+            style="@style/itemInfoRightEditText"
+            android:inputType="number"
+            android:maxLength="1"
+            android:hint="号码3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemInfo"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/itemInfoLeftText"
+            android:text="开奖号码4："/>
+        <EditText
+            android:id="@+id/et_p4"
+            style="@style/itemInfoRightEditText"
+            android:inputType="number"
+            android:maxLength="1"
+            android:hint="号码4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemInfo"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/itemInfoLeftText"
+            android:text="开奖号码5："/>
+        <EditText
+            android:id="@+id/et_p5"
+            style="@style/itemInfoRightEditText"
+            android:inputType="number"
+            android:maxLength="1"
+            android:hint="号码5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemInfo"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/itemInfoLeftText"
+            android:text="开奖号码6："/>
+        <EditText
+            android:id="@+id/et_p6"
+            style="@style/itemInfoRightEditText"
+            android:inputType="number"
+            android:maxLength="1"
+            android:hint="号码6"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/itemInfo"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/itemInfoLeftText"
+            android:text="开奖号码7："/>
+        <EditText
+            android:id="@+id/et_p7"
+            style="@style/itemInfoRightEditText"
+            android:inputType="number"
+            android:maxLength="1"
+            android:hint="号码7"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="@dimen/space_normal">
+        <RadioButton
+            android:id="@+id/rb_ing"
+            style="@style/itemInfoLeftText"
+            android:text="开始销售"/>
+        <RadioButton
+            android:id="@+id/rb_close"
+            style="@style/itemInfoLeftText"
+            android:text="封盘"/>
+        <RadioButton
+            android:id="@+id/rb_out"
+            style="@style/itemInfoLeftText"
+            android:text="已开奖"/>
+        <RadioButton
+            android:id="@+id/rb_end"
+            android:visibility="gone"
+            style="@style/itemInfoLeftText"
+            android:text="已结束"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/btnBlue"
+        android:layout_marginTop="@dimen/space_normal"
+        android:text="保存"/>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.user.AddUserActivity">
+
+    <include layout="@layout/bar_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_sides"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:text="会员信息："/>
+
+            <LinearLayout
+                style="@style/itemInfo"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/itemInfoLeftText"
+                    android:text="账号："/>
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/itemInfoRightEditText"
+                    android:inputType="text|number"
+                    android:hint="请输入账号"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/itemInfo"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/itemInfoLeftText"
+                    android:text="密码："/>
+                <EditText
+                    android:id="@+id/et_pw"
+                    style="@style/itemInfoRightEditText"
+                    android:inputType="textPassword"
+                    android:hint="请输入密码"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/itemInfo"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/itemInfoLeftText"
+                    android:text="代号："/>
+                <EditText
+                    android:id="@+id/et_nickname"
+                    style="@style/itemInfoRightEditText"
+                    android:hint="请输入新代号"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/itemInfo"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/itemInfoLeftText"
+                    android:text="额度："/>
+                <EditText
+                    android:id="@+id/et_credit_limit"
+                    style="@style/itemInfoRightEditText"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:hint="请输入信用额度"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/itemInfo"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/cb_eneabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/itemInfoLeftText"
+                    android:layout_marginLeft="50dp"
+                    android:checked="true"
+                    android:text="是否启用"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sides"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_cancel"
+                    style="@style/btnBlueSmall"
+                    android:layout_weight="1"
+                    android:text="取消"/>
+                <Button
+                    android:id="@+id/btn_save"
+                    style="@style/btnBlueSmall"
+                    android:layout_weight="1"
+                    android:text="确定"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

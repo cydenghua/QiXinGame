@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="space_sides">15dp</dimen><!--页面左右边距-->
+
+    <dimen name="space_normal">10dp</dimen><!--模块纵向间距，例如个人资料页面-->
+
+    <dimen name="space_small">5dp</dimen><!--模块纵向间距，例如个人资料页面-->
+
+    <dimen name="stroke_width">1dp</dimen><!--shape边框线条宽度-->
+
+    <dimen name="line_divide_height">0.5dp</dimen><!--分隔线高度-->
+
+    <dimen name="btn_height">48dp</dimen><!--按钮高度-->
+    <dimen name="btn_height_small">36dp</dimen><!--按钮高度-->
+    <dimen name="btn_margin_sizes">38dp</dimen><!--蓝色按钮左右边距-->
+
+    <dimen name="radius_btn_large">30dp</dimen><!--大圆角按钮-->
+    <dimen name="radius_btn">5dp</dimen><!--shape一般按钮圆角的大小-->
+
+    <dimen name="text_size_large">18sp</dimen><!--导航标题（粗体）、其它突出文字-->
+    <dimen name="text_size_normal">16sp</dimen><!--所有文字默认颜色-->
+    <dimen name="text_size">14sp</dimen><!--提示性文字、长篇幅非重点文字、带图标菜单文字等-->
+    <dimen name="text_size_small">12sp</dimen><!--非重点提示性文字、限于视窗或外层包裹调整最小文字-->
+    <dimen name="text_size_smaller">10sp</dimen><!--底部标签默认文字大小、其他说明提示文字-->
+
+    <dimen name="item_info_height">50dp</dimen><!--每项item的高度，例如个人资料姓名项高度-->
+    <dimen name="drawable_padding">5dp</dimen><!--TextView drawablePadding默认尺寸-->
+
+    <dimen name="doodle_color_shape_select_item_size">40dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">140dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

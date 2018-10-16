@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dcode.qixin.mapper.QxPeriodMapper" >
+  <resultMap id="BaseResultMap" type="com.dcode.qixin.model.QxPeriod" >
+    <id column="sys_id" property="sysId" jdbcType="INTEGER" />
+    <result column="p_id" property="pId" jdbcType="INTEGER" />
+    <result column="p_time" property="pTime" jdbcType="TIMESTAMP" />
+    <result column="p1" property="p1" jdbcType="SMALLINT" />
+    <result column="p2" property="p2" jdbcType="SMALLINT" />
+    <result column="p3" property="p3" jdbcType="SMALLINT" />
+    <result column="p4" property="p4" jdbcType="SMALLINT" />
+    <result column="p5" property="p5" jdbcType="SMALLINT" />
+    <result column="p6" property="p6" jdbcType="SMALLINT" />
+    <result column="p7" property="p7" jdbcType="SMALLINT" />
+    <result column="status" property="status" jdbcType="SMALLINT" />
+    <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    sys_id, p_id, p_time, p1, p2, p3, p4, p5, p6, p7, status, created_time, modify_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from qx_period
+    where sys_id = #{sysId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from qx_period
+    where sys_id = #{sysId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dcode.qixin.model.QxPeriod" >
+    insert into qx_period (sys_id, p_id, p_time, 
+      p1, p2, p3, p4, 
+      p5, p6, p7, status, 
+      created_time, modify_time)
+    values (#{sysId,jdbcType=INTEGER}, #{pId,jdbcType=INTEGER}, #{pTime,jdbcType=TIMESTAMP}, 
+      #{p1,jdbcType=SMALLINT}, #{p2,jdbcType=SMALLINT}, #{p3,jdbcType=SMALLINT}, #{p4,jdbcType=SMALLINT}, 
+      #{p5,jdbcType=SMALLINT}, #{p6,jdbcType=SMALLINT}, #{p7,jdbcType=SMALLINT}, #{status,jdbcType=SMALLINT}, 
+      #{createdTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dcode.qixin.model.QxPeriod" >
+    insert into qx_period
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="sysId != null" >
+        sys_id,
+      </if>
+      <if test="pId != null" >
+        p_id,
+      </if>
+      <if test="pTime != null" >
+        p_time,
+      </if>
+      <if test="p1 != null" >
+        p1,
+      </if>
+      <if test="p2 != null" >
+        p2,
+      </if>
+      <if test="p3 != null" >
+        p3,
+      </if>
+      <if test="p4 != null" >
+        p4,
+      </if>
+      <if test="p5 != null" >
+        p5,
+      </if>
+      <if test="p6 != null" >
+        p6,
+      </if>
+      <if test="p7 != null" >
+        p7,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="createdTime != null" >
+        created_time,
+      </if>
+      <if test="modifyTime != null" >
+        modify_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="sysId != null" >
+        #{sysId,jdbcType=INTEGER},
+      </if>
+      <if test="pId != null" >
+        #{pId,jdbcType=INTEGER},
+      </if>
+      <if test="pTime != null" >
+        #{pTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="p1 != null" >
+        #{p1,jdbcType=SMALLINT},
+      </if>
+      <if test="p2 != null" >
+        #{p2,jdbcType=SMALLINT},
+      </if>
+      <if test="p3 != null" >
+        #{p3,jdbcType=SMALLINT},
+      </if>
+      <if test="p4 != null" >
+        #{p4,jdbcType=SMALLINT},
+      </if>
+      <if test="p5 != null" >
+        #{p5,jdbcType=SMALLINT},
+      </if>
+      <if test="p6 != null" >
+        #{p6,jdbcType=SMALLINT},
+      </if>
+      <if test="p7 != null" >
+        #{p7,jdbcType=SMALLINT},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=SMALLINT},
+      </if>
+      <if test="createdTime != null" >
+        #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null" >
+        #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dcode.qixin.model.QxPeriod" >
+    update qx_period
+    <set >
+      <if test="pId != null" >
+        p_id = #{pId,jdbcType=INTEGER},
+      </if>
+      <if test="pTime != null" >
+        p_time = #{pTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="p1 != null" >
+        p1 = #{p1,jdbcType=SMALLINT},
+      </if>
+      <if test="p2 != null" >
+        p2 = #{p2,jdbcType=SMALLINT},
+      </if>
+      <if test="p3 != null" >
+        p3 = #{p3,jdbcType=SMALLINT},
+      </if>
+      <if test="p4 != null" >
+        p4 = #{p4,jdbcType=SMALLINT},
+      </if>
+      <if test="p5 != null" >
+        p5 = #{p5,jdbcType=SMALLINT},
+      </if>
+      <if test="p6 != null" >
+        p6 = #{p6,jdbcType=SMALLINT},
+      </if>
+      <if test="p7 != null" >
+        p7 = #{p7,jdbcType=SMALLINT},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=SMALLINT},
+      </if>
+      <if test="createdTime != null" >
+        created_time = #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null" >
+        modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where sys_id = #{sysId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dcode.qixin.model.QxPeriod" >
+    update qx_period
+    set p_id = #{pId,jdbcType=INTEGER},
+      p_time = #{pTime,jdbcType=TIMESTAMP},
+      p1 = #{p1,jdbcType=SMALLINT},
+      p2 = #{p2,jdbcType=SMALLINT},
+      p3 = #{p3,jdbcType=SMALLINT},
+      p4 = #{p4,jdbcType=SMALLINT},
+      p5 = #{p5,jdbcType=SMALLINT},
+      p6 = #{p6,jdbcType=SMALLINT},
+      p7 = #{p7,jdbcType=SMALLINT},
+      status = #{status,jdbcType=SMALLINT},
+      created_time = #{createdTime,jdbcType=TIMESTAMP},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+    where sys_id = #{sysId,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectByRecent" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from qx_period
+    order by sys_id desc
+    limit 30
+  </select>
+
+  <select id="selectLast" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from qx_period
+    order by sys_id desc
+    limit 1
+  </select>
+
+</mapper>

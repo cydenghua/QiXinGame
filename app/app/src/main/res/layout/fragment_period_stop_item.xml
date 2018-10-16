@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/space_normal"
+    tools:context=".activity.bet.PeriodStopFragment">
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="110dp"
+        android:layout_marginLeft="@dimen/space_normal"
+        style="@style/textBlack"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_marginLeft="@dimen/space_normal"
+        style="@style/textBlack"/>
+
+</LinearLayout>

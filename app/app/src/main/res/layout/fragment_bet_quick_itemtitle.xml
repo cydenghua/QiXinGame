@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_sn"
+        style="@style/textBlue"
+        android:layout_width="40dp"
+        android:gravity="center"
+        android:text="序号"/>
+    <TextView
+        style="@style/textBlue"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="号码"/>
+    <TextView
+        style="@style/textBlue"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="赔率"/>
+    <TextView
+        style="@style/textBlue"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="金额"/>
+    <TextView
+        style="@style/textBlue"
+        android:layout_width="90dp"
+        android:gravity="center"
+        android:text="时间"/>
+    <Button
+        android:id="@+id/btn_back"
+        style="@style/btnBlue"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="@dimen/space_normal"
+        android:layout_marginTop="@dimen/space_small"
+        android:layout_marginBottom="@dimen/space_small"
+        android:text="退码"/>
+
+</LinearLayout>

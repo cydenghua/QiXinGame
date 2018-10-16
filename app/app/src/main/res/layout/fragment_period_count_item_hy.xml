@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activity.bet.PeriodCountFragment">
+
+    <TextView
+        android:id="@+id/tv_period"
+        style="@style/textBlackGrid"
+        android:text="期号"
+        android:textColor="@color/orange"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_playmoney"
+        style="@style/textBlackGrid"
+        android:text="金额"
+        android:layout_width="70dp"/>
+
+    <TextView
+        android:id="@+id/tv_paykf"
+        style="@style/textBlackGrid"
+        android:text="中奖"
+        android:layout_width="70dp"/>
+
+    <TextView
+        android:id="@+id/tv_rake_hy"
+        style="@style/textBlackGrid"
+        android:text="回水"
+        android:layout_width="70dp"/>
+
+    <TextView
+        android:id="@+id/tv_yk"
+        style="@style/textBlackGrid"
+        android:text="盈亏"
+        android:layout_width="70dp"/>
+
+    <TextView
+            android:id="@+id/tv_user_hy"
+            android:layout_width="90dp"
+            android:text="会员"
+            android:visibility="gone"
+            style="@style/textBlackGrid"/>
+        <TextView
+            android:id="@+id/tv_rake_dl"
+            android:layout_width="70dp"
+            android:text="回水(代理)"
+            android:visibility="gone"
+            style="@style/textBlackGrid"/>
+        <TextView
+            android:id="@+id/tv_rake_zd"
+            android:layout_width="70dp"
+            android:text="回水(总代)"
+            android:visibility="gone"
+            style="@style/textBlackGrid"/>
+
+
+</LinearLayout>

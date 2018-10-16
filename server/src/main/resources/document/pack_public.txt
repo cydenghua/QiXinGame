@@ -1,0 +1,18 @@
+
+更新版本参数
+查看端口：
+netstat -anp
+kill 命令用于终止进程
+例如： kill -9 [PID]
+
+用360加固app
+
+
+进入redis：redis-cli
+清除所有缓存：FLUSHALL
+
+
+nohup java -jar qixin-0.0.1-SNAPSHOT.jar &
+
+百度开发者平台  账号：techememed@163.com 密码：ememed
+http://app.baidu.com/jiagu/?frompos=800130

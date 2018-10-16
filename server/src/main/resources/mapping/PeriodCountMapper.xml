@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dcode.qixin.mapper.PeriodCountMapper" >
+  <resultMap id="BaseResultMap" type="com.dcode.qixin.model.PeriodCount" >
+    <id column="period_id" property="periodId" jdbcType="INTEGER" />
+    <id column="hy_id" property="hyId" jdbcType="INTEGER" />
+    <result column="gd_id" property="gdId" jdbcType="INTEGER" />
+    <result column="zd_id" property="zdId" jdbcType="INTEGER" />
+    <result column="dl_id" property="dlId" jdbcType="INTEGER" />
+    <result column="play_money" property="playMoney" jdbcType="INTEGER" />
+    <result column="rake_gd" property="rakeGd" jdbcType="INTEGER" />
+    <result column="rake_zd" property="rakeZd" jdbcType="INTEGER" />
+    <result column="rake_dl" property="rakeDl" jdbcType="INTEGER" />
+    <result column="rake_hy" property="rakeHy" jdbcType="INTEGER" />
+    <result column="pay_kf" property="payKf" jdbcType="INTEGER" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+
+    <result column="p_id" property="pId" jdbcType="VARCHAR" />
+    <result column="p_time" property="pTime" jdbcType="TIMESTAMP" />
+    <result column="gd_name" property="gdName" jdbcType="VARCHAR" />
+    <result column="gd_nickname" property="gdNickname" jdbcType="VARCHAR" />
+    <result column="zd_name" property="zdName" jdbcType="VARCHAR" />
+    <result column="zd_nickname" property="zdNickname" jdbcType="VARCHAR" />
+    <result column="dl_name" property="dlName" jdbcType="VARCHAR" />
+    <result column="dl_nickname" property="dlNickname" jdbcType="VARCHAR" />
+    <result column="hy_name" property="hyName" jdbcType="VARCHAR" />
+    <result column="hy_nickname" property="hyNickname" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <sql id="Base_Column_List" >
+    period_id, hy_id, gd_id, zd_id, dl_id, play_money, rake_gd, rake_zd, rake_dl, rake_hy, 
+    pay_kf, status, created_time, modify_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.dcode.qixin.model.PeriodCountKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from qx_period_count
+    where period_id = #{periodId,jdbcType=INTEGER}
+      and hy_id = #{hyId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.dcode.qixin.model.PeriodCountKey" >
+    delete from qx_period_count
+    where period_id = #{periodId,jdbcType=INTEGER}
+      and hy_id = #{hyId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dcode.qixin.model.PeriodCount" >
+    insert into qx_period_count (period_id, hy_id, gd_id, 
+      zd_id, dl_id, play_money, 
+      rake_gd, rake_zd, rake_dl, 
+      rake_hy, pay_kf, status, 
+      created_time, modify_time)
+    values (#{periodId,jdbcType=INTEGER}, #{hyId,jdbcType=INTEGER}, #{gdId,jdbcType=INTEGER}, 
+      #{zdId,jdbcType=INTEGER}, #{dlId,jdbcType=INTEGER}, #{playMoney,jdbcType=INTEGER}, 
+      #{rakeGd,jdbcType=INTEGER}, #{rakeZd,jdbcType=INTEGER}, #{rakeDl,jdbcType=INTEGER}, 
+      #{rakeHy,jdbcType=INTEGER}, #{payKf,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, 
+      #{createdTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dcode.qixin.model.PeriodCount" >
+    insert into qx_period_count
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="periodId != null" >
+        period_id,
+      </if>
+      <if test="hyId != null" >
+        hy_id,
+      </if>
+      <if test="gdId != null" >
+        gd_id,
+      </if>
+      <if test="zdId != null" >
+        zd_id,
+      </if>
+      <if test="dlId != null" >
+        dl_id,
+      </if>
+      <if test="playMoney != null" >
+        play_money,
+      </if>
+      <if test="rakeGd != null" >
+        rake_gd,
+      </if>
+      <if test="rakeZd != null" >
+        rake_zd,
+      </if>
+      <if test="rakeDl != null" >
+        rake_dl,
+      </if>
+      <if test="rakeHy != null" >
+        rake_hy,
+      </if>
+      <if test="payKf != null" >
+        pay_kf,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="createdTime != null" >
+        created_time,
+      </if>
+      <if test="modifyTime != null" >
+        modify_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="periodId != null" >
+        #{periodId,jdbcType=INTEGER},
+      </if>
+      <if test="hyId != null" >
+        #{hyId,jdbcType=INTEGER},
+      </if>
+      <if test="gdId != null" >
+        #{gdId,jdbcType=INTEGER},
+      </if>
+      <if test="zdId != null" >
+        #{zdId,jdbcType=INTEGER},
+      </if>
+      <if test="dlId != null" >
+        #{dlId,jdbcType=INTEGER},
+      </if>
+      <if test="playMoney != null" >
+        #{playMoney,jdbcType=INTEGER},
+      </if>
+      <if test="rakeGd != null" >
+        #{rakeGd,jdbcType=INTEGER},
+      </if>
+      <if test="rakeZd != null" >
+        #{rakeZd,jdbcType=INTEGER},
+      </if>
+      <if test="rakeDl != null" >
+        #{rakeDl,jdbcType=INTEGER},
+      </if>
+      <if test="rakeHy != null" >
+        #{rakeHy,jdbcType=INTEGER},
+      </if>
+      <if test="payKf != null" >
+        #{payKf,jdbcType=INTEGER},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="createdTime != null" >
+        #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null" >
+        #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dcode.qixin.model.PeriodCount" >
+    update qx_period_count
+    <set >
+      <if test="gdId != null" >
+        gd_id = #{gdId,jdbcType=INTEGER},
+      </if>
+      <if test="zdId != null" >
+        zd_id = #{zdId,jdbcType=INTEGER},
+      </if>
+      <if test="dlId != null" >
+        dl_id = #{dlId,jdbcType=INTEGER},
+      </if>
+      <if test="playMoney != null" >
+        play_money = #{playMoney,jdbcType=INTEGER},
+      </if>
+      <if test="rakeGd != null" >
+        rake_gd = #{rakeGd,jdbcType=INTEGER},
+      </if>
+      <if test="rakeZd != null" >
+        rake_zd = #{rakeZd,jdbcType=INTEGER},
+      </if>
+      <if test="rakeDl != null" >
+        rake_dl = #{rakeDl,jdbcType=INTEGER},
+      </if>
+      <if test="rakeHy != null" >
+        rake_hy = #{rakeHy,jdbcType=INTEGER},
+      </if>
+      <if test="payKf != null" >
+        pay_kf = #{payKf,jdbcType=INTEGER},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="createdTime != null" >
+        created_time = #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null" >
+        modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where period_id = #{periodId,jdbcType=INTEGER}
+      and hy_id = #{hyId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dcode.qixin.model.PeriodCount" >
+    update qx_period_count
+    set gd_id = #{gdId,jdbcType=INTEGER},
+      zd_id = #{zdId,jdbcType=INTEGER},
+      dl_id = #{dlId,jdbcType=INTEGER},
+      play_money = #{playMoney,jdbcType=INTEGER},
+      rake_gd = #{rakeGd,jdbcType=INTEGER},
+      rake_zd = #{rakeZd,jdbcType=INTEGER},
+      rake_dl = #{rakeDl,jdbcType=INTEGER},
+      rake_hy = #{rakeHy,jdbcType=INTEGER},
+      pay_kf = #{payKf,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      created_time = #{createdTime,jdbcType=TIMESTAMP},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+    where period_id = #{periodId,jdbcType=INTEGER}
+      and hy_id = #{hyId,jdbcType=INTEGER}
+  </update>
+
+  <delete id="deletePeriodCount" parameterType="java.lang.Integer" >
+    delete from qx_period_count where period_id =  #{periodId,jdbcType=INTEGER};
+  </delete>
+
+  <insert id="doPeriodCount" parameterType="java.lang.Integer" >
+    insert into qx_period_count(period_id, hy_id, play_money, rake_gd, rake_zd, rake_dl, rake_hy, pay_kf)
+    select a.period_id, a.user_id, sum(a.play_money),sum(a.rake_gd), sum(a.rake_zd), sum(a.rake_dl), sum(a.rake_hy), sum(a.pay_kf)
+    from qx_period_bet a
+    LEFT JOIN qx_user_odds b on a.user_id = b.user_id and a.play_type = b.play_type
+    LEFT JOIN qx_period c on a.period_id = c.sys_id
+    where a.period_id =  #{periodId,jdbcType=INTEGER} and a.deleted = 0
+    GROUP BY a.period_id, a.user_id;
+  </insert>
+
+  <update id="updatePeriodUserId" parameterType="java.lang.Integer" >
+    update qx_period_count a
+    LEFT JOIN qx_users b on a.hy_id = b.sys_id
+    LEFT JOIN qx_users c on c.sys_id = b.create_user
+    LEFT JOIN qx_users d on d.sys_id = c.create_user
+    set a.dl_id = b.create_user, a.zd_id = c.create_user, a.gd_id = d.create_user
+    where period_id = #{periodId,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectMyPeriodCount" resultMap="BaseResultMap" parameterType="com.dcode.qixin.model.PeriodCount" >
+    select a.*, b.p_id, b.p_time,
+    c.name as gd_name, c.nickname as gd_nickname,
+    d.name as zd_name, d.nickname as zd_nickname,
+    e.name as dl_name, e.nickname as dl_nickname,
+    f.name as hy_name, f.nickname as hy_nickname
+    from qx_period_count a
+    LEFT JOIN qx_period b on a.period_id = b.sys_id
+    LEFT JOIN qx_users c on c.sys_id = a.gd_id
+    LEFT JOIN qx_users d on d.sys_id = a.zd_id
+    LEFT JOIN qx_users e on e.sys_id = a.dl_id
+    LEFT JOIN qx_users f on f.sys_id = a.hy_id
+    where a.gd_id = #{gdId,jdbcType=INTEGER} or a.zd_id = #{zdId,jdbcType=INTEGER} or a.dl_id = #{dlId,jdbcType=INTEGER} or a.hy_id = #{hyId,jdbcType=INTEGER}
+    order by a.period_id desc, a.gd_id asc, a.zd_id asc, a.dl_id asc, a.hy_id asc
+  </select>
+
+
+</mapper>

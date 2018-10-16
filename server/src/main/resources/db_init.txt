@@ -1,0 +1,46 @@
+
+-- create user: admin
+    insert into qx_users (sys_id, name, password, pw_err_count, role_id, level, create_user, credit_limit, deleted)
+    values (1, 'admin', 's9NeUm+xDm1zJmEmSn+wbg==', 0, 0, 0, 0, 1000000, 0) -- pw admin+99888
+
+-- insert init odds
+    -- 二字定
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '2p1', '口口XX', '2p', '100', '300000', '30178000', '99.60', '1');
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '2p2', '口X口X', '2p', '100', '300000', '30168000', '99.60', '2');
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '2p3', '口XX口', '2p', '100', '300000', '60458000', '99.60', '3');
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '2p4', 'X口X口', '2p', '100', '300000', '20158000', '99.60', '4');
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '2p5', 'X口口X', '2p', '100', '300000', '20168000', '99.60', '5');
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '2p6', 'XX口口', '2p', '100', '300000', '20188000', '99.60', '6');
+
+    -- 三字定
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '3p1', '口口口X', '3p', '100', '20000', '3615800', '993.50', '7');
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '3p2', '口口X口', '3p', '100', '20000', '3615800', '993.50', '8');
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '3p3', '口X口口', '3p', '100', '20000', '3615800', '993.50', '9');
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '3p4', 'X口口口', '3p', '100', '20000', '3615800', '993.50', '10');
+
+    -- 四字定
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '4p1', '四定位', '4p', '10', '10000', '1006000', '9900.00', '11');
+
+    -- 二字现
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '2px', '二字现', '2px', '100', '50000', '36150000', '9.95', '12');
+
+    -- 三字现
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '3px', '三字现', '3px', '100', '50000', '36100000', '49.50', '13');
+
+    -- 四字现
+    insert into qx_user_odds (user_id, play_type, play_type_name, play_type_class, min_play, max_play, max_class_play, odds_pt, o_id)
+    values ('1', '4px', '四字现', '4px', '100', '10000', '1010000', '488.50', '14');
+

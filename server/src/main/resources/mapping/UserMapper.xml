@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dcode.qixin.mapper.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.dcode.qixin.model.User" >
+    <id column="sys_id" property="sysId" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="pw_err_count" property="pwErrCount" jdbcType="SMALLINT" />
+    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+    <result column="role_id" property="roleId" jdbcType="INTEGER" />
+    <result column="level" property="level" jdbcType="SMALLINT" />
+    <result column="create_user" property="createUser" jdbcType="INTEGER" />
+    <result column="credit_limit" jdbcType="INTEGER" property="creditLimit" />
+    <result column="credit_limit_left" property="creditLimitLeft" jdbcType="INTEGER" />
+    <result column="deleted" property="deleted" jdbcType="SMALLINT" />
+    <result column="eneabled" property="eneabled" jdbcType="SMALLINT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    name, password, pw_err_count, nickname, role_id, token, token_expire, level, credit_limit,
+    credit_limit_left, create_user, eneabled, deleted
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from qx_users
+    where sys_id = #{sysId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from qx_users
+    where sys_id = #{sysId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dcode.qixin.model.User" useGeneratedKeys="true" keyProperty="sysId" >
+    insert into qx_users (sys_id, name, password,
+      pw_err_count, nickname, role_id,
+      token, token_expire, level,
+      create_user, credit_limit, credit_limit_left,
+      deleted, created_time, modify_time,
+      eneabled)
+    values (#{sysId,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+      #{pwErrCount,jdbcType=SMALLINT}, #{nickname,jdbcType=VARCHAR}, #{roleId,jdbcType=INTEGER},
+      #{token,jdbcType=VARCHAR}, #{tokenExpire,jdbcType=BIGINT}, #{level,jdbcType=SMALLINT},
+      #{createUser,jdbcType=INTEGER}, #{creditLimit,jdbcType=INTEGER}, #{creditLimitLeft,jdbcType=INTEGER},
+      #{deleted,jdbcType=SMALLINT}, #{createdTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP},
+      #{eneabled,jdbcType=SMALLINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dcode.qixin.model.User" useGeneratedKeys="true" keyProperty="sysId" >
+    insert into qx_users
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="sysId != null" >
+        sys_id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="nickname != null" >
+        nickname,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="pwErrCount != null" >
+        pw_err_count,
+      </if>
+      <if test="roleId != null" >
+        role_id,
+      </if>
+      <if test="token != null" >
+        token,
+      </if>
+      <if test="tokenExpire != null" >
+        token_expire,
+      </if>
+      <if test="level != null" >
+        level,
+      </if>
+      <if test="createUser != null" >
+        create_user,
+      </if>
+      <if test="creditLimit != null">
+        credit_limit,
+      </if>
+      <if test="creditLimitLeft != null" >
+        credit_limit_left,
+      </if>
+      <if test="deleted != null" >
+        deleted,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="sysId != null" >
+        #{sysId,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="nickname != null" >
+        #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="pwErrCount != null" >
+        #{pwErrCount,jdbcType=SMALLINT},
+      </if>
+      <if test="roleId != null" >
+        #{roleId,jdbcType=INTEGER},
+      </if>
+      <if test="token != null" >
+        #{token,jdbcType=VARCHAR},
+      </if>
+      <if test="tokenExpire != null" >
+        #{tokenExpire,jdbcType=BIGINT},
+      </if>
+      <if test="level != null" >
+        #{level,jdbcType=SMALLINT},
+      </if>
+      <if test="createUser != null" >
+        #{createUser,jdbcType=INTEGER},
+      </if>
+      <if test="creditLimit != null">
+        #{creditLimit,jdbcType=INTEGER},
+      </if>
+      <if test="creditLimitLeft != null" >
+        #{creditLimitLeft,jdbcType=INTEGER},
+      </if>
+      <if test="deleted != null" >
+        #{deleted,jdbcType=SMALLINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dcode.qixin.model.User" >
+    update qx_users
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="nickname != null" >
+        nickname = #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="pwErrCount != null" >
+        pw_err_count = #{pwErrCount,jdbcType=SMALLINT},
+      </if>
+      <if test="roleId != null" >
+        role_id = #{roleId,jdbcType=INTEGER},
+      </if>
+      <if test="token != null" >
+        token = #{token,jdbcType=VARCHAR},
+      </if>
+      <if test="tokenExpire != null" >
+        token_expire = #{tokenExpire,jdbcType=BIGINT},
+      </if>
+      <if test="level != null" >
+        level = #{level,jdbcType=SMALLINT},
+      </if>
+      <if test="createUser != null" >
+        create_user = #{createUser,jdbcType=INTEGER},
+      </if>
+      <if test="creditLimit != null">
+        credit_limit = #{creditLimit,jdbcType=INTEGER},
+      </if>
+      <if test="creditLimitLeft != null" >
+        credit_limit_left = #{creditLimitLeft,jdbcType=INTEGER},
+      </if>
+      <if test="deleted != null" >
+        deleted = #{deleted,jdbcType=SMALLINT},
+      </if>
+      <if test="eneabled != null" >
+        eneabled = #{eneabled,jdbcType=SMALLINT},
+      </if>
+    </set>
+    where sys_id = #{sysId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dcode.qixin.model.User" >
+    update qx_users
+    set name = #{name,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      pw_err_count = #{pwErrCount,jdbcType=SMALLINT},
+      nickname = #{nickname,jdbcType=VARCHAR},
+      role_id = #{roleId,jdbcType=INTEGER},
+      token = #{token,jdbcType=VARCHAR},
+      token_expire = #{tokenExpire,jdbcType=BIGINT},
+      level = #{level,jdbcType=SMALLINT},
+      create_user = #{createUser,jdbcType=INTEGER},
+      credit_limit = #{creditLimit,jdbcType=INTEGER},
+      credit_limit_left = #{creditLimitLeft,jdbcType=INTEGER},
+      deleted = #{deleted,jdbcType=SMALLINT},
+      created_time = #{createdTime,jdbcType=TIMESTAMP},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      eneabled = #{eneabled,jdbcType=SMALLINT}
+    where sys_id = #{sysId,jdbcType=INTEGER}
+  </update>
+
+  <select id="getUserByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    *
+    from qx_users
+    where deleted = 0 and  name = #{userName,jdbcType=VARCHAR}
+  </select>
+
+  <select id="getUserByToken" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    *
+    from qx_users
+    where deleted = 0 and token_expire > unix_timestamp(now()) and  token = #{userToken,jdbcType=VARCHAR}
+  </select>
+
+  <select id="getMyUsers" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select sys_id, name, nickname, pw_err_count, role_id, level, create_user, credit_limit, eneabled, deleted
+    from qx_users
+    where deleted = 0 and  create_user = #{userId,jdbcType=INTEGER}
+  </select>
+
+  <select id="getAllUsers" parameterType="java.util.List" resultMap="BaseResultMap">
+    select sys_id, name, nickname, pw_err_count, role_id, level, create_user, credit_limit, eneabled, deleted
+    from qx_users
+    where deleted = 0 and  create_user in
+      <foreach collection="idList" item="id" index="index"
+               open="(" close=")" separator=",">
+          #{id}
+      </foreach>
+  </select>
+
+</mapper>

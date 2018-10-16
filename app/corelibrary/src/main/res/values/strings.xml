@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CoreLibrary</string>
+
+
+    <string name="network_error">网络连接错误</string><!--获取数据时，无网络-->
+    <string name="server_error">网络异常</string><!--获取数据时，服务器异常-->
+
+</resources>

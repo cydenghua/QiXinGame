@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_users"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="下级管理" />
+        <item
+            android:id="@+id/nav_my_odds"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="赔率设置" />
+        <item
+            android:id="@+id/nav_period"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="开奖号码" />
+        <item
+            android:id="@+id/nav_period_odds"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="赔率变动" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_menu_send"
+            android:title="报表" />
+
+        <item
+            android:id="@+id/nav_period_stop"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="停押设置" />
+        <!--<item-->
+            <!--android:id="@+id/nav_manage32"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="拦货盘" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_manage33"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="设置" />-->
+    </group>
+
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_send"
+                android:title="退出系统" />
+        </menu>
+    </item>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

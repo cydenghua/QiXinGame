@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.bet.PeriodCountFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_period"
+            style="@style/textBlackGrid"
+            android:text="期号"
+            android:gravity="left"
+            android:textColor="@color/orange"/>
+        <TextView
+            android:id="@+id/tv_user_hy"
+            android:text="会员"
+            android:layout_weight="1"
+            android:gravity="left"
+            style="@style/textBlackGrid"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_playmoney"
+            style="@style/textBlackGrid"
+            android:text="金额"
+            android:layout_weight="1"
+            android:layout_width="70dp"/>
+        <TextView
+            android:id="@+id/tv_paykf"
+            style="@style/textBlackGrid"
+            android:text="中奖"
+            android:layout_width="70dp"/>
+        <TextView
+            android:id="@+id/tv_rake_hy"
+            style="@style/textBlackGrid"
+            android:text="回水"
+            android:layout_width="70dp"/>
+        <TextView
+            android:id="@+id/tv_yk"
+            style="@style/textBlackGrid"
+            android:text="盈亏"
+            android:layout_width="70dp"/>
+        <TextView
+            android:id="@+id/tv_rake_dl"
+            android:layout_width="70dp"
+            android:text="水(代理)"
+            style="@style/textBlackGrid"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_rake_zd"
+        android:layout_width="70dp"
+        android:text="回水(总代)"
+        android:visibility="gone"
+        style="@style/textBlackGrid"/>
+
+</LinearLayout>

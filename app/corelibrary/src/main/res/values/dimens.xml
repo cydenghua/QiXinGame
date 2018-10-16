@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="bar_title_height">44dp</dimen><!--标题栏高度-->
+
+</resources>

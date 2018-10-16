@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activity.report.UserBillActivity">
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/textGridItem"
+        android:layout_weight="1"
+        android:text="日期"/>
+
+    <LinearLayout
+        android:id="@+id/ll_hy"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_hy_total"
+            style="@style/textGridItem"
+            android:layout_width="78dp"
+            android:text="总投"/>
+        <TextView
+            android:id="@+id/tv_hy_res"
+            style="@style/textGridItem"
+            android:layout_width="78dp"
+            android:text="盈亏"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_dl_total"
+            style="@style/textGridItem"
+            android:layout_width="78dp"
+            android:text="总投"/>
+        <TextView
+            android:id="@+id/tv_dl_res"
+            style="@style/textGridItem"
+            android:layout_width="78dp"
+            android:text="盈亏"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/ll_zd"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_zd_rake"
+            style="@style/textGridItem"
+            android:layout_width="78dp"
+            android:text="赚水"/>
+        <TextView
+            android:id="@+id/tv_zd_res"
+            style="@style/textGridItem"
+            android:layout_width="78dp"
+            android:text="总盈亏"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_gd"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_gd_total"
+            style="@style/textGridItem"
+            android:layout_width="78dp"
+            android:text="总投"/>
+        <TextView
+            android:id="@+id/tv_gd_res"
+            style="@style/textGridItem"
+            android:layout_width="78dp"
+            android:text="盈亏"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="@dimen/space_normal"
+    tools:context=".activity.user.MyUserActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/textGreySmall"
+            android:text="账号:"/>
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/textBlackNormal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/textGreySmall"
+            android:text=" 代号:"/>
+        <TextView
+            android:id="@+id/tv_nickname"
+            style="@style/textBlackNormal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/textGreySmall"
+            android:text=" 额度:"/>
+        <TextView
+            android:id="@+id/tv_credit_limit"
+            android:maxLines="1"
+            style="@style/textBlackNormal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_deleted"
+            style="@style/textBlackNormal"
+            android:clickable="false"
+            android:text="启用"/>
+    </LinearLayout>
+
+</LinearLayout>

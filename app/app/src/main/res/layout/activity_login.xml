@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.login.LoginActivity"
+    android:background="@color/white_grey">
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_above="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/space_sides"
+        android:dividerHeight="@dimen/space_sides"
+        android:divider="@color/white_grey">
+    </ListView>
+
+    <Button
+        android:id="@+id/add"
+        style="@style/btnBlue"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/space_sides"
+        android:text="添加登录"/>
+
+</RelativeLayout>
